@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collect</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .sidenav {
+           padding: 20px;
+        }
+        
+        .sidenav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #5292C5;
+        }
+        
+        .vertical-line {
+            width: 1px;
+            background-color: #8f8f8f;
+            height: 100%;
+            display: none;
+        }
+        
+        @media (min-width: 992px) {
+            .vertical-line {
+                display: block;
+            }
+        }
+        
+        .collection-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            height: 100%;
+        }
+        
+        .collection-card img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+        
+        .card-divider {
+            border-top: 1px solid #8f8f8f;
+            margin: 15px 0;
+        }
+        
+        .add-collection {
+            border: 1px dashed #d2d2d2;
+            background: #ffffff;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .add-collection:hover {
+            background: #f8f9fa;
+        }
+        
+        .add-circle {
+            width: 65px;
+            height: 65px;
+            border: 1px solid #d2d2d2;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .add-circle::before,
+        .add-circle::after {
+            content: '';
+            position: absolute;
+            background: #000;
+            opacity: 0.5;
+        }
+        
+        .add-circle::before {
+            width: 16px;
+            height: 2px;
+        }
+        
+        .add-circle::after {
+            width: 2px;
+            height: 16px;
+        }
+        
+        .text-gray {
+            color: #8f8f8f;
+        }
+    </style>
+</head>
+<body>
+  <div class="container py-4">
+    <div class="row">
+        <!-- 側邊選單 -->
+        <div class="col-md-3 mb-4">
+            <nav class="sidenav p-3">
+                <div class="d-flex flex-column">
+                    <a href="#">會員資料修改</a>
+                    <a href="#">我的訂單</a>
+                    <a href="#">我的文章</a>
+                    <a href="#">我的租借</a>
+                    <a href="#">我的課程</a>
+                    <a href="#">我的收藏</a>
+                    <a href="#">優惠券</a>
+                    <a href="#">登出</a>
+                </div>
+            </nav>
+        </div>
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <h1 class="mb-4">我的收藏</h1>
+
+                <!-- 相機 Section -->
+                <section class="mb-5">
+                    <h5 class="mb-3">相機</h5>
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="collection-card p-3">
+                                <img src="/image/upload/1.jpg" alt="相機" class="mb-3">
+                                <div class="card-divider"></div>
+                                <h6 class="text-gray mb-2">FUJIFILM 富士</h6>
+                                <h5 class="mb-3">X-T5 16-50mm</h5>
+                                <h6 class="text-gray">恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段 媲美定焦鏡的解像能力及散景表現 4 顆 XD 線性馬達帶來快速、安靜的自動對焦 918g 輕量化設計，並具備理想平衡讓拍攝更舒適</h6>
+                            </div>
+                        </div>
+
+                        <!-- Add Collection Card -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="add-collection collection-card p-3">
+                                <div class="text-center">
+                                    <div class="add-circle mx-auto mb-2"></div>
+                                    <h5>添加收藏</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 租賃 Section -->
+                <section class="mb-5">
+                    <h5 class="mb-3">租賃</h5>
+                    <div class="row g-4">
+                        <!-- Similar cards structure... -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="collection-card p-3">
+                                <img src="/image/upload/1.jpg" alt="租賃" class="mb-3">
+                                <div class="card-divider"></div>
+                                <h6 class="text-gray mb-2">FUJIFILM 富士</h6>
+                                <h5 class="mb-3">X-T5 16-50mm</h5>
+                                <h6 class="text-gray">恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段 媲美定焦鏡的解像能力及散景表現 4 顆 XD 線性馬達帶來快速、安靜的自動對焦 918g 輕量化設計，並具備理想平衡讓拍攝更舒適</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="add-collection collection-card p-3">
+                                <div class="text-center">
+                                    <div class="add-circle mx-auto mb-2"></div>
+                                    <h5>添加收藏</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 課程 Section -->
+                <section class="mb-5">
+                    <h5 class="mb-3">課程</h5>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="collection-card p-3">
+                                <img src="/image/course_cover/course_20_1.avif" alt="課程" class="mb-3">
+                                <div class="card-divider"></div>
+                                <h6 class="text-gray mb-2">課程</h6>
+                                <h5>旅行攝影：按下快門，用攝影書寫故事</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="add-collection collection-card p-3">
+                                <div class="text-center">
+                                    <div class="add-circle mx-auto mb-2"></div>
+                                    <h5>添加收藏</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

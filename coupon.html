@@ -1,0 +1,151 @@
+<!-- 我的課程 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>course</title>
+    <style>
+      body {
+        max-width: 1920px;
+        background-color: #f5f5f5;
+      }
+      /* main{
+            padding-left: 131px;
+            padding-right: 131px;
+        } */
+      .flex {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .start {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+      }
+      .sidenav {
+        width: 264px;
+        max-height: 580px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px;
+        gap: 20px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        padding: 0; /* 可选，去掉默认内边距 */
+        margin: 0; /* 可选，去掉默认外边距 */
+      }
+      .line {
+        width: 0.5px;
+        background-color: #8f8f8f;
+      }
+      .maincontainer {
+        width: 1209px;
+        padding-left: 100px;
+        /* display: grid; */
+        gap: 48px;
+      }
+      .bg-img {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        background-image: url(../image/coupon/1000.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 20px;
+      }
+      h4 {
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
+        right: -107px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container flex">
+      <ul class="sidenav">
+        <a href="">會員資料修改</a>
+        <a href="">我的訂單</a>
+        <a href="">我的文章</a>
+        <a href="">我的租借</a>
+        <a href="">我的課程</a>
+        <a href="">我的收藏</a>
+        <a href="">優惠券</a>
+        <a href="">登出</a>
+      </ul>
+      <div class="line"></div>
+
+      <div class="maincontainer">
+        <div>
+          <h1>我的優惠券</h1>
+        </div>
+
+        <div>
+          <h5>相機</h5>
+        </div>
+        <div class="start">
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+        </div>
+        <div>
+          <h5>課程</h5>
+        </div>
+        <div class="start">
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+          <div class="bg-img">
+            <h4>使用期限 : 2025-01-23</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

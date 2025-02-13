@@ -1,0 +1,304 @@
+<!-- 我的收藏 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>collect</title>
+    <style>
+      body {
+        max-width: 1920px;
+        background-color: #f5f5f5;
+      }
+      /* main{
+            padding-left: 131px;
+            padding-right: 131px;
+        } */
+      .flex {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .sidenav {
+        width: 264px;
+        max-height: 580px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px;
+        gap: 20px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        padding: 0; /* 可选，去掉默认内边距 */
+        margin: 0; /* 可选，去掉默认外边距 */
+      }
+      .line {
+        width: 0.5px;
+        max-height: 1900px;
+        background-color: #8f8f8f;
+      }
+      .maincontainer {
+        width: 1209px;
+        padding-left: 100px;
+        /* display: grid; */
+        gap: 48px;
+      }
+      .box {
+        width: 272px;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+      }
+      .box-add {
+        width: 272px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border: 1px dashed #d2d2d2;
+        border-radius: 20px;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        position: relative;
+        width: 65px;
+        height: 65px;
+        border: 1px solid #d2d2d2;
+        border-radius: 50px;
+      }
+      .box-line1 {
+        position: absolute;
+        width: 16px;
+        height: 0px;
+        left: 25px;
+        top: 32px;
+
+        opacity: 0.5;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+      }
+      .box-line2 {
+        position: absolute;
+        width: 15px;
+        height: 0px;
+        left: 25px;
+        top: 32.5px;
+
+        border: 1px solid #000000;
+      }
+      .box-h5 {
+        width: 100px;
+        position: absolute;
+        left: 7px;
+        top: 50px;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .box1-2 {
+        margin: 20px 0;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: #8f8f8f;
+      }
+      .box1-2 h6 {
+        color: #8f8f8f;
+      }
+      .margin {
+        margin: 10px 0 !important;
+      }
+      .card-box {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container flex">
+      <ul class="sidenav">
+        <a href="">會員資料修改</a>
+        <a href="">我的訂單</a>
+        <a href="">我的文章</a>
+        <a href="">我的租借</a>
+        <a href="">我的課程</a>
+        <a href="">我的收藏</a>
+        <a href="">優惠券</a>
+        <a href="">登出</a>
+      </ul>
+      <div class="line"></div>
+
+      <div class="maincontainer">
+        <div>
+          <h1>我的收藏</h1>
+        </div>
+
+        <div>
+          <div>
+            <h5>相機</h5>
+          </div>
+          <div class="card-box">
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/upload/1.jpg" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">FUJIFILM 富士</h6>
+                  <h5 class="margin">X-T5 16-50mm</h5>
+                </div>
+              </div>
+
+              <div>
+                <h6>
+                  恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段
+                  媲美定焦鏡的解像能力及散景表現  4 顆 XD
+                  線性馬達帶來快速、安靜的自動對焦 918g
+                  輕量化設計，並具備理想平衡讓拍攝更舒適
+                </h6>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/upload/1.jpg" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">FUJIFILM 富士</h6>
+                  <h5 class="margin">X-T5 16-50mm</h5>
+                </div>
+              </div>
+
+              <div>
+                <h6>
+                  恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段
+                  媲美定焦鏡的解像能力及散景表現  4 顆 XD
+                  線性馬達帶來快速、安靜的自動對焦 918g
+                  輕量化設計，並具備理想平衡讓拍攝更舒適
+                </h6>
+              </div>
+            </div>
+
+            <div class="box-add">
+              <div class="box1">
+                <div class="box-line1"></div>
+                <div class="box-line2"></div>
+                <h5 class="box-h5">添加收藏</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h5>租賃</h5>
+          </div>
+          <div class="card-box">
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/upload/1.jpg" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">FUJIFILM 富士</h6>
+                  <h5 class="margin">X-T5 16-50mm</h5>
+                </div>
+              </div>
+
+              <div>
+                <h6>
+                  恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段
+                  媲美定焦鏡的解像能力及散景表現  4 顆 XD
+                  線性馬達帶來快速、安靜的自動對焦 918g
+                  輕量化設計，並具備理想平衡讓拍攝更舒適
+                </h6>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/upload/1.jpg" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">FUJIFILM 富士</h6>
+                  <h5 class="margin">X-T5 16-50mm</h5>
+                </div>
+              </div>
+
+              <div>
+                <h6>
+                  恆定 F2 最大光圈 涵蓋多種拍攝需求的 28-70mm 焦段
+                  媲美定焦鏡的解像能力及散景表現  4 顆 XD
+                  線性馬達帶來快速、安靜的自動對焦 918g
+                  輕量化設計，並具備理想平衡讓拍攝更舒適
+                </h6>
+              </div>
+            </div>
+
+            <div class="box-add">
+              <div class="box1">
+                <div class="box-line1"></div>
+                <div class="box-line2"></div>
+                <h5 class="box-h5">添加收藏</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h5>課程</h5>
+          </div>
+          <div class="card-box">
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/course_cover/course_12_1.avif" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">課程</h6>
+                  <h5 class="margin">旅行攝影：按下快門，用攝影書寫故事</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="">
+                <div class="box1-1">
+                  <img src="./image/course_cover/course_20_1.avif" alt="" />
+                </div>
+
+                <div class="box1-2">
+                  <h6 class="margin">課程</h6>
+                  <h5 class="margin">閱讀攝影的眼神 - 啟動你的影像理解力</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-add">
+              <div class="box1">
+                <div class="box-line1"></div>
+                <div class="box-line2"></div>
+                <h5 class="box-h5">添加收藏</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

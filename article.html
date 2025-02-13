@@ -1,0 +1,190 @@
+<!-- 文章修改 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>rental</title>
+    <style>
+      body {
+        max-width: 1920px;
+        background-color: #f5f5f5;
+      }
+      /* main{
+            padding-left: 131px;
+            padding-right: 131px;
+        } */
+      .flex {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .sidenav {
+        width: 264px;
+        max-height: 580px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px;
+        gap: 20px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        padding: 0; /* 可选，去掉默认内边距 */
+        margin: 0; /* 可选，去掉默认外边距 */
+      }
+      .line {
+        width: 0.5px;
+        height: 100vh;
+        background-color: #8f8f8f;
+      }
+      .maincontainer {
+        width: 1209px;
+        padding-left: 100px;
+        /* display: grid; */
+        gap: 48px;
+      }
+      .box {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+      }
+      .text-img{
+        width: 100%;
+        padding: 10px;
+      }
+      .start{
+        display: flex;
+        justify-content: start;
+        padding: 10px;
+      }
+      .aricle-user{
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        margin-right: 10px;
+
+      }
+      .box-add {
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border: 1px dashed #d2d2d2;
+        border-radius: 20px;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        position: relative;
+        width: 65px;
+        height: 65px;
+        border: 1px solid #d2d2d2;
+        border-radius: 50px;
+      }
+      .box-line1 {
+        position: absolute;
+        width: 16px;
+        height: 0px;
+        left: 25px;
+        top: 32px;
+
+        opacity: 0.5;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+      }
+      .box-line2 {
+        position: absolute;
+        width: 15px;
+        height: 0px;
+        left: 25px;
+        top: 32.5px;
+
+        border: 1px solid #000000;
+      }
+      .box-h5 {
+        width: 100px;
+        position: absolute;
+        left: -10px;
+        top: 50px;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .box1-2 {
+        margin: 20px 0;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: #8f8f8f;
+      }
+      .box1-2 h6 {
+        color: #8f8f8f;
+      }
+      .margin {
+        margin: 10px 0 !important;
+      }
+      .card-box {
+        display: grid;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container flex">
+      <ul class="sidenav">
+        <a href="">會員資料修改</a>
+        <a href="">我的訂單</a>
+        <a href="">我的文章</a>
+        <a href="">我的租借</a>
+        <a href="">我的課程</a>
+        <a href="">我的收藏</a>
+        <a href="">優惠券</a>
+        <a href="">登出</a>
+      </ul>
+      <div class="line"></div>
+
+      <div class="maincontainer">
+        <div>
+          <h1>我的文章</h1>
+        </div>
+
+        <div>
+          <div class="card-box">
+            <div class="box">
+              <div class="text-img margin"> 
+                <h5>請問2025大家心目中的最佳街拍相機組合為何?</h5>
+                <h6 class="margin">哈哈哈, 2024已經快過去了, 想要請教大家此時此刻, 心目中最佳的2025街拍神器為何?原因是個人以後大概拍最多的會是街拍, 而且以人物比較多, 時常會因旅遊在外逛一天! 最近和攝友討論, 大家都說街拍之王是GRIII. 不過我看了01的介紹後, 發現那完全不是我心中的街拍相機, 雖然很小巧, 但是...</h6>
+                <div class="start">
+                  <img class="aricle-user" src="./image/1.jpg" alt="">
+                  <h5>sweet57239</h5>
+                </div>
+              </div>
+              <div class="text-img">
+                <img src="./image/1.jpg" alt="">
+              </div>
+            </div>
+            <div class="box-add">
+              <div class="box1">
+                <div class="box-line1"></div>
+                <div class="box-line2"></div>
+                <h5 class="box-h5">尋找喜愛的文章</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

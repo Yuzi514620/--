@@ -1,0 +1,225 @@
+<!-- 會員資料修改 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+
+    <title>user</title>
+    <style>
+      body {
+        max-width: 1920px;
+        background-color: #f5f5f5;
+      }
+      /* main{
+            padding-left: 131px;
+            padding-right: 131px;
+        } */
+      .flex {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .sidenav{
+        width: 264px;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px;
+        gap: 20px;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        padding: 0; /* 可选，去掉默认内边距 */
+        margin: 0; /* 可选，去掉默认外边距 */
+      }
+      .line {
+        width: 0.5px;
+        height: 1500px;
+        background-color: #8f8f8f;
+      }
+      .maincontainer {
+        width: 1100px;
+        padding-left: 100px;
+        display: grid;
+        gap: 48px;
+      }
+      .bacg {
+        width: 1209px;
+        height: 222px;
+        background-image: url(../image/1.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 20px;
+        padding: 0px 44px;
+        gap: 10px;
+      }
+      .button-box {
+        width: 105px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        color: #5292c5;
+        font-size: 14px;
+        display: grid;
+        place-items: center;
+        border: none;
+      }
+      .flex-left {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 87px;
+      }
+      .aaa {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 0px 20px;
+        gap: 17px;
+
+        width: 520px;
+        height: 515px;
+      }
+      input {
+        width: 500px;
+        height: 47px;
+        border-radius: 20px !important;
+        margin-top: 10px;
+      }
+      .button-box {
+        width: 105px;
+        height: 50px;
+        background-color: #062f4f;
+        border-radius: 20px;
+        color: white;
+        font-size: 14px;
+        display: grid;
+        place-items: center;
+      }
+      .passwordchange-box {
+        width: 436px;
+        height: 235px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 56px 47px;
+      }
+      .address-box {
+        width: 582px;
+        height: 291px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        margin-top: 70px;
+        padding: 60px 73px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <main class=" flex">
+      <ul class="sidenav">
+        <a href="">會員資料修改</a>
+        <a href="">我的訂單</a>
+        <a href="">我的文章</a>
+        <a href="">我的租借</a>
+        <a href="">我的課程</a>
+        <a href="">我的收藏</a>
+        <a href="">優惠券</a>
+        <a href="">登出</a>
+      </ul>
+      <div class="line"></div>
+      <div class="maincontainer">
+        <div>
+          <h1>會員資料修改</h1>
+          <h6>
+            在此部分中，您可以尋找和編輯您的個人檔案和地址。您還可以管理您的相機電子報訂閱和更改密碼。
+          </h6>
+        </div>
+
+        <div>
+          <div class="bacg">
+            <h6>獲取相機最新文章</h6>
+            <button class="button-box">立即前往</button>
+          </div>
+        </div>
+
+        <div class="flex-left">
+          <div class="aaa">
+            <div class="">
+              <label for="">電郵地址</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">稱謂 *</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">姓氏 *</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">名字 *</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="">出生日期</label>
+              <input type="text" />
+            </div>
+            <div>
+              <button class="button-box">更新我的帳戶</button>
+            </div>
+          </div>
+
+          <div class="passwordchange-box">
+            <div class="aaa">
+              <h5>我的密碼</h5>
+              <h6>如要更改密碼，您需要先輸入目前的密碼。</h6>
+              <button class="button-box">更新我的密碼</button>
+            </div>
+          </div>
+        </div>
+        <div class="address-box">
+          <h4>我的地址</h4>
+          <div>
+            <div>送貨地址:</div>
+            <div>尚未填寫送貨地址</div>
+            <div>
+              選擇預設送貨地址
+              <br />
+              添加新送貨地址
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
